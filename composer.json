@@ -1,0 +1,33 @@
+{
+    "name": "gamaxtersnow/redlock-php",
+    "version": "0.0.1",
+    "description": "基于redis的分布式锁",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "RedisLock\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "wuzhaohui"
+        }
+    ],
+    "require": {
+        "php": "^8.3.0"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "think": {
+            "services": [
+                "RedisLock\\Think\\RedisLockService"
+            ],
+            "config":{
+                "lock": "src/Think/config.php"
+            }
+        }
+    }
+}
