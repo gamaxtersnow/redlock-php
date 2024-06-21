@@ -1,6 +1,6 @@
 {
     "name": "gamaxtersnow/redlock-php",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "基于redis的分布式锁",
     "type": "library",
     "license": "MIT",
@@ -15,7 +15,8 @@
         }
     ],
     "require": {
-        "php": "^8.3.0"
+        "php": "^8.3.0",
+        "ext-redis": "*"
     },
     "config": {
         "sort-packages": true
